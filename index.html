@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- For Icons -->
+</head>
+
+<body>
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Aditya Ranjan Samal. All rights reserved.</p>
+    </footer>
+
+    <div id="mainLoader">
+        <div id="loader" class="d-flex flex-column justify-content-center align-items-center vh-100 bg-light">
+            <h2 class="mb-3 text-primary">🎮 Loading...</h2>
+            <div class="progress" style="width: 70%; height: 18px;">
+                <div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                    role="progressbar" style="width: 0%; transition: width 2.5s linear;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        🌙 Dark Mode
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle" class="toggle-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </label>
+    </div>
+
+    <!-- Main Menu -->
+    <div id="main-menu" class="justify-content-center align-items-center text-center">
+        <h1>🎮 Tic-Tac-Toe</h1>
+        <div class="button-container">
+            <!-- AI Mode Dropdown -->
+            <div class="dropdown">
+                <button class="menu-btn" id="ai-toggle" onclick="toggleAIMenu(event)">💻 Play vs AI ⬇</button>
+                <div id="ai-options" class="dropdown-content">
+                    <button onclick="startGame('ai','easy')">🙂 Easy</button>
+                    <button onclick="startGame('ai','hard')">😈 Hard</button>
+                </div>
+            </div>
+
+            <!-- Two Player Mode Button -->
+            <button class="menu-btn two-player-btn" onclick="startGame('2player')">👥 Two Player</button>
+        </div>
+    </div>
+    <!-- Game Board -->
+    <div id="game-container" class="hidden">
+        <h1 id="game-title">Tic-Tac-Toe</h1>
+
+        <div id="board">
+            <!-- 3x3 Grid -->
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <div id="win-overlay" class="hidden">
+            <span id="win-message">X Wins!</span>
+        </div>
+
+
+        <!-- Score Panel -->
+        <div id="score-panel">
+            <p>❌ X: <span id="score-x">0</span></p>
+            <p>⭕ O: <span id="score-o">0</span></p>
+
+            <!-- First Move Slider -->
+            <div id="pillSlider" class="first-player-slider">
+                <label for="firstPlayerToggle">First Move:</label>
+                <input type="checkbox" id="firstPlayerToggle">
+                <span id="firstPlayerLabel">X</span>
+            </div>
+
+        </div>
+
+        <!-- Control Buttons -->
+        <button class="control-btn" onclick="resetBoard()">🔄 Reset</button>
+        <button class="control-btn" onclick="backToMenu()">🔙 Main Menu</button>
+    </div>
+</body>
+
+
+
+</html>
