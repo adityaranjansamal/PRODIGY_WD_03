@@ -34,6 +34,13 @@ cd PRODIGY_WD_03
 ## 🌐 **Live Website Deployment**
 [Visit the Live Website](https://adityarnsamal-tic-tac-toe-prodigy-inf.netlify.app/)
 
+## ⚠️ **Disclaimer**:
+
+**Copyright Notice:**<br>
+This code belongs to **Aditya Ranjan Samal**.<br>
+Unauthorized copying or sharing of this code without permission from the author is strictly prohibited.<br>
+This project is intended for educational purposes only and should not be used in a real-world banking environment without proper security considerations and regulatory compliance.
+
 
 ---
 
