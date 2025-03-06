@@ -39,7 +39,7 @@ cd PRODIGY_WD_03
 **Copyright Notice:**<br>
 This code belongs to **Aditya Ranjan Samal**.<br>
 Unauthorized copying or sharing of this code without permission from the author is strictly prohibited.<br>
-This project is intended for educational purposes only and should not be used in a real-world banking environment without proper security considerations and regulatory compliance.
+This project is intended for educational purposes only.
 
 
 ---
