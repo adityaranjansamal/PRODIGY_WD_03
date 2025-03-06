@@ -31,7 +31,7 @@ Clone the repository and navigate to the project folder:
 git clone https://github.com/adityaranjansamal/PRODIGY_WD_03.git
 cd PRODIGY_WD_03
 ```
-## 🌐 Live Website Deployment 🌐
+## 🌐 **Live Website Deployment**
 [Visit the Live Website](https://adityarnsamal-tic-tac-toe-prodigy-inf.netlify.app/)
 
 
