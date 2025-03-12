@@ -32,7 +32,7 @@ git clone https://github.com/adityaranjansamal/PRODIGY_WD_03.git
 cd PRODIGY_WD_03
 ```
 ## 🌐 **Live Website Deployment**
-[Visit the Live Website](https://adityarnsamal-tic-tac-toe-prodigy-inf.netlify.app/)
+[Visit the Live Website](https://adityarnsamal-tictactoe-game.netlify.app/)
 
 ## ⚠️ **Disclaimer**:
 
